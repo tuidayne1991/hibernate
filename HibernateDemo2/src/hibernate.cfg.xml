@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class"> com.ibm.db2.jcc.DB2Driver</property>
+        <property name="hibernate.connection.password">abc123</property>
+        <property name="hibernate.connection.url">jdbc:db2://localhost:50000/trial1</property>
+        <property name="hibernate.connection.username">db2inst1</property>
+        <property name="hibernate.default_schema">TESTDB2</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.DB2Dialect</property>
+         <property name="current_session_context_class">thread</property>
+    </session-factory>
+</hibernate-configuration>
